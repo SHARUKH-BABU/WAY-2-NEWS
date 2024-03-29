@@ -6,8 +6,7 @@ let animationBlock = document.getElementById("animation-block");
 }, 1000);
 
 const invoke = async () => {
-    const API = process.env.apikey;
-    let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${API}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=0dea7395a6044585b3cc6d989a0d48a0`;
     let parsedData = await data.json();
 
     // Access the articles array from the parsedData
