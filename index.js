@@ -1,9 +1,9 @@
-let animationBlock = document.getElementById("animation-block");
-    setTimeout(() => {
-        animationBlock.classList.add("hidden");
-        let container = document.getElementById('container');
-        container.classList.remove("hidden");
-}, 1000);
+// let animationBlock = document.getElementById("animation-block");
+//     setTimeout(() => {
+//         animationBlock.classList.add("hidden");
+//         let container = document.getElementById('container');
+//         container.classList.remove("hidden");
+// }, 1000);
 
 const invoke = async () => {
     let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=0dea7395a6044585b3cc6d989a0d48a0`;
