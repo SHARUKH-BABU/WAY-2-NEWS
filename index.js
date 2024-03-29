@@ -1,3 +1,9 @@
+let animationBlock = document.getElementById("animation-block");
+    setTimeout(() => {
+        animationBlock.classList.add("hidden");
+        let container = document.getElementById('container');
+        container.classList.remove("hidden");
+}, 1000);
 
 const invoke = async () => {
 
