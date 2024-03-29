@@ -7,7 +7,7 @@
 
 const invoke = async () => {
     let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=0dea7395a6044585b3cc6d989a0d48a0`;
-    let data  = await(url);
+    let data  = await fetch(url);
     let parsedData = await data.json();
 
     // Access the articles array from the parsedData
