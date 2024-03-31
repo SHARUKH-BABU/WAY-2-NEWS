@@ -1,4 +1,3 @@
-invoke();
 
 const invoke = async () => {
     let key = process.env.apikey;
@@ -24,3 +23,6 @@ const invoke = async () => {
         container.appendChild(newsItem);
     });
 }
+
+invoke();
+
