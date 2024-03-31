@@ -1,7 +1,7 @@
 invoke();
 
 const invoke = async () => {
-    let key = process..env.apikey;
+    let key = process.env.apikey;
     let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${key}`;
     let data  = await fetch(url);
     let parsedData = await data.json();
