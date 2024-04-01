@@ -5,46 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>WAY 2 NEWS</title>
 </head>
 <body >
     <header class="sticky top-0">
       <nav class="sticky top-0 w-full bg-violet-500 p-5 text-center font-bold text-white shadow-sm shadow-slate-300">
-        <a href="#container"><i class="fa-regular fa-newspaper mx-3"></i></a>
+        <a href="#selection-content"><i class="fa-regular fa-newspaper mx-3"></i></a>
         WAY 2 NEWS
       </nav>
     </header>
-    <div id="container" class="m-5 mx-auto grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div id="container">
+      <div id="selection-content" class="selection-content col-span-full grid grid-cols-4 md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 ">
+          <button  class=" btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">sports</button>
+          <button class=" btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">business</button>
+          <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">politics</button>
+          <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">technology</button>
+      </div>
 
-
-                   <!-- main news-item -->
-
-      <!-- <div class="news-item  m-5 rounded-lg bg-violet-500 p-5 shadow-2xl shadow-violet-950">
-        <img class="w-full" src="https://th.bing.com/th/id/OIP.0rscWQck-vfAws8kRbvu6gHaE8?rs=1&pid=ImgDetMain" alt="chocolates-1" />
-        <h1 class="my-2 text-center font-bold text-white">ITEM</h1>
-        <p class="text-slate-950">this is item label it describes about the item codset and rating hello this is my favourate item guys what do you say about it ?</p>
-        <button class="mt-3 rounded bg-red-500 p-2 text-white"><a href="#">READ MORE ...</a></button>
-      </div> -->
       
-      
-
-<!--     <div id="animation-block" class="gap-5 m-10 p-5 mx-auto grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
-            <div class="animate-pulse flex space-x-4">
-              <div class="rounded-full bg-slate-700 h-10 w-10"></div>
-              <div class="flex-1 space-y-6 py-1">
-                <div class="h-2 bg-slate-700 rounded"></div>
-                <div class="space-y-3">
-                  <div class="grid grid-cols-3 gap-4">
-                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
-                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
-                  </div>
-                  <div class="h-2 bg-slate-700 rounded"></div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+      <div id="news-Articles"  class="m-5 mx-auto grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        
+        <!-- <div id="animation-block" class="col-span-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+          <div class=" border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
             <div class="animate-pulse flex space-x-4">
               <div class="rounded-full bg-slate-700 h-10 w-10"></div>
               <div class="flex-1 space-y-6 py-1">
@@ -59,6 +40,7 @@
               </div>
             </div>
           </div>
+  
           <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
             <div class="animate-pulse flex space-x-4">
               <div class="rounded-full bg-slate-700 h-10 w-10"></div>
@@ -74,141 +56,52 @@
               </div>
             </div>
           </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
+  
+          <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+            <div class="animate-pulse flex space-x-4">
+              <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+              <div class="flex-1 space-y-6 py-1">
+                <div class="h-2 bg-slate-700 rounded"></div>
+                <div class="space-y-3">
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
+                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                  </div>
+                  <div class="h-2 bg-slate-700 rounded"></div>
+                </div>
               </div>
-              <div class="h-2 rounded bg-slate-700"></div>
             </div>
           </div>
-        </div>
+  
+          <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+            <div class="animate-pulse flex space-x-4">
+              <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+              <div class="flex-1 space-y-6 py-1">
+                <div class="h-2 bg-slate-700 rounded"></div>
+                <div class="space-y-3">
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
+                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                  </div>
+                  <div class="h-2 bg-slate-700 rounded"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
-        <div class="flex animate-pulse space-x-4">
-          <div class="h-10 w-10 rounded-full bg-slate-700"></div>
-          <div class="flex-1 space-y-6 py-1">
-            <div class="h-2 rounded bg-slate-700"></div>
-            <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 h-2 rounded bg-slate-700"></div>
-                <div class="col-span-1 h-2 rounded bg-slate-700"></div>
-              </div>
-              <div class="h-2 rounded bg-slate-700"></div>
-            </div>
-          </div>
-        </div>
+
+                   <!-- main news-item -->
+
+      <!-- <div class="news-item  m-5 rounded-lg bg-violet-500 p-5 shadow-2xl shadow-violet-950">
+        <img class="w-full" src="https://th.bing.com/th/id/OIP.0rscWQck-vfAws8kRbvu6gHaE8?rs=1&pid=ImgDetMain" alt="chocolates-1" />
+        <h1 class="my-2 text-center font-bold text-white">ITEM</h1>
+        <p class="text-slate-950">this is item label it describes about the item codset and rating hello this is my favourate item guys what do you say about it ?</p>
+        <button class="mt-3 rounded bg-red-500 p-2 text-white"><a href="#">READ MORE ...</a></button>
       </div> -->
+      
+      
+     
     </div>
 
   <script src="index.js"> </script>
