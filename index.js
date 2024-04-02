@@ -4,13 +4,7 @@
 //         let container = document.getElementById('container');
 //         container.classList.remove("hidden");
 // }, 1000);
-// let animationBlock = document.getElementById("animation-block");
-//     setTimeout(() => {
-//         animationBlock.classList.add("hidden");
-//         let container = document.getElementById('container');
-//         container.classList.remove("hidden");
-// }, 1000);
-let url = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=0dea7395a6044585b3cc6d989a0d48a0`;
+let url = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=0dea7395a6044585b3cc6d989a0d48a0`;
 
 const news_Articles = document.getElementById('news-Articles');
 
@@ -46,3 +40,22 @@ document.addEventListener('click', (event) => {
         fetchNews();
     }
 });
+
+const toggle = () =>{
+    let selection_content = document.getElementById("selection-content")
+    selection_content.classList.toggle("max-md:hidden")
+
+    let menu_icon = document.getElementById("menu-icon")
+    menu_icon.classList.toggle("fa-bars")
+    menu_icon.classList.toggle("fa-xmark")
+    
+    let btns = document.querySelectorAll(".btn")
+    let btnsArray = Array.from(btns)
+    btnsArray.forEach((selected_btn, index) =>{
+        selected_btn.addEventListener("click", ()=>{      
+            menu_icon.classList.add("fa-bars")
+            menu_icon.classList.remove("fa-xmark")
+            selection_content.classList.add("max-md:hidden")
+        })
+    })
+}
