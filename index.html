@@ -6,22 +6,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
+
+
 <body >
     <header class="sticky top-0">
-      <nav class="sticky top-0 w-full bg-violet-500 p-5 text-center font-bold text-white shadow-sm shadow-slate-300">
-        <a href="#selection-content"><i class="fa-regular fa-newspaper mx-3"></i></a>
-        WAY 2 NEWS
+      <nav class="sticky top-0 w-full bg-violet-500 p-5 text-center font-bold text-white shadow-sm shadow-slate-300 max-md:flex max-md:justify-between">
+        <a href="#container" class="max-sm:text-xl"><i class="fa-regular fa-newspaper mx-3"></i>
+          WAY 2 NEWS</a>
+        <i id="menu-icon" class="fa-solid fa-bars hidden max-sm:block max-md:block font-bold text-xl cursor-pointer" onclick="toggle()"></i>
       </nav>
+      <div id="selection-content" class="bg-green-200 col-span-full grid grid-cols-3 grid-cols-3 max-sm:grid-cols-1 max-md:hidden">
+        <button  class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1 focus:ring-2 ring-reviolet07 focus:bg-red-500 focus:text-lg">sports</button>
+        <button class=" btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1 focus:ring-2 ring-violet-700 focus:bg-red-500 focus:text-lg">business</button>
+        <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1 focus:ring-2 ring-violet-700 focus:bg-red-500 focus:text-lg">politics</button>
+        <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1 focus:ring-2 ring-violet-700 focus:bg-red-500 focus:text-lg">technology</button>
+        <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1 focus:ring-2 ring-violet-700 focus:bg-red-500 focus:text-lg">entertainment</button>
+        <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1 focus:ring-2 ring-red-500 focus:bg-red-500 focus:text-lg">science</button>
+    </div>
     </header>
     <div id="container">
-      <div id="selection-content" class="selection-content col-span-full grid grid-cols-4 md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 ">
-          <button  class=" btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">sports</button>
-          <button class=" btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">business</button>
-          <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">politics</button>
-          <button class="btn bg-green-500 text-white m-2 p-2 rounded-md font-bold md:col-span-1 lg:col-span-1">technology</button>
-      </div>
-
-      
       <div id="news-Articles"  class="m-5 mx-auto grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         
         <!-- <div id="animation-block" class="col-span-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
